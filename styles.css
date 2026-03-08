@@ -111,7 +111,7 @@ p {
 
 .dark-bg h2,
 .dark-bg h3,
-.dark-bg p {
+.dark-bg h4 {
   color: var(--white);
 }
 
@@ -310,12 +310,17 @@ p {
   display: inline-block;
   padding: 0.5rem 1rem;
   background-color: rgba(0, 229, 255, 0.1);
-  color: #00A6B8;
-  /* Darker variant of accent blue for contrast */
+  color: #00D5E6;
+  /* Lightened for better visibility */
   font-weight: 600;
   font-size: 0.875rem;
   border-radius: 50px;
   margin-bottom: 1.5rem;
+}
+
+.dark-bg .badge {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--accent-blue);
 }
 
 .hero h1 {
@@ -457,7 +462,6 @@ p {
      ABOUT US
      ======================================= */
 .about-section {
-  background-color: var(--white);
   position: relative;
 }
 
