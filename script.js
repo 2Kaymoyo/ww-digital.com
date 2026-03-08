@@ -62,4 +62,61 @@ document.addEventListener('DOMContentLoaded', () => {
     animatedElements.forEach(el => {
         observer.observe(el);
     });
+
+    // 4. Team Member Modals
+    const teamData = {
+        wilbur: {
+            name: 'Wilbur Moffitt',
+            role: 'Founder & Frontend Specialist',
+            img: 'about-photo-1.png',
+            bio: '<p>Wilbur is the founder of WW Digital, specializing in creating flawless, modern frontend experiences. With a keen eye for design aesthetics and a passion for performance, he ensures every project not only looks stunning but runs lightning-fast across all devices.</p>'
+        },
+        will: {
+            name: 'Will',
+            role: 'Co-founder, Backend & Commerce Specialist',
+            img: 'about-photo-2.png',
+            bio: '<p>Will makes sure our digital solutions are as powerful under the hood as they are beautiful on the surface. Specializing in robust backend architectures and highly scalable e-commerce solutions, he builds the reliable systems that drive our clients\' businesses forward.</p>'
+        }
+    };
+
+    const teamMembers = document.querySelectorAll('.team-member');
+    const modal = document.getElementById('team-modal');
+    
+    if (teamMembers.length > 0 && modal) {
+        const modalClose = document.querySelector('.modal-close');
+        const modalImg = document.getElementById('modal-img');
+        const modalName = document.getElementById('modal-name');
+        const modalRole = document.getElementById('modal-role');
+        const modalBio = document.getElementById('modal-bio');
+
+        teamMembers.forEach(member => {
+            member.addEventListener('click', () => {
+                const memberId = member.getAttribute('data-member');
+                const data = teamData[memberId];
+                if (data) {
+                    modalImg.src = data.img;
+                    modalName.textContent = data.name;
+                    modalRole.textContent = data.role;
+                    modalBio.innerHTML = data.bio;
+                    modal.classList.add('active');
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling
+                }
+            });
+        });
+
+        // Close logic
+        const closeModal = () => {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        };
+
+        modalClose.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            // Close if clicking outside the modal container
+            if (e.target === modal) closeModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) closeModal();
+        });
+    }
 });

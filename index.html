@@ -107,11 +107,21 @@
     <section id="about" class="about-section section">
         <div class="container about-container grid">
             <div class="about-images fade-in-up">
-                <div class="about-image-wrapper">
-                    <img src="about-photo-1.png" alt="WW Digital Founder 1" class="about-img main-img">
+                <div class="about-image-wrapper team-member fade-in-up" data-member="wilbur">
+                    <img src="about-photo-1.png" alt="Wilbur Moffitt - Founder & Frontend Specialist" class="about-img main-img">
+                    <div class="member-overlay">
+                        <h4>Wilbur Moffitt</h4>
+                        <span>Founder & Frontend</span>
+                        <div class="click-hint"><i class="fa-solid fa-plus"></i> Bio</div>
+                    </div>
                 </div>
-                <div class="about-image-wrapper offset-img-wrapper">
-                    <img src="about-photo-2.png" alt="WW Digital Founder 2" class="about-img offset-img">
+                <div class="about-image-wrapper offset-img-wrapper team-member fade-in-up delay-1" data-member="will">
+                    <img src="about-photo-2.png" alt="Will - Co-founder & Backend Specialist" class="about-img offset-img">
+                    <div class="member-overlay">
+                        <h4>Will</h4>
+                        <span>Co-founder & Backend</span>
+                        <div class="click-hint"><i class="fa-solid fa-plus"></i> Bio</div>
+                    </div>
                 </div>
             </div>
             <div class="about-content fade-in-up delay-2">
@@ -215,6 +225,25 @@
             <p>&copy; 2026 WW Digital. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Team Member Modals -->
+    <div class="modal-overlay" id="team-modal">
+        <div class="modal-container">
+            <button class="modal-close" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="" alt="" class="modal-img" id="modal-img">
+                    <div class="modal-title">
+                        <h3 id="modal-name">Name</h3>
+                        <p class="role badge" id="modal-role">Role</p>
+                    </div>
+                </div>
+                <div class="modal-body" id="modal-bio">
+                    <!-- Bio goes here -->
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
