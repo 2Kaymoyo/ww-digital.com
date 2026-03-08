@@ -119,4 +119,38 @@ document.addEventListener('DOMContentLoaded', () => {
             if (e.key === 'Escape' && modal.classList.contains('active')) closeModal();
         });
     }
+    // 5. Portfolio Filtering
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const portfolioCards = document.querySelectorAll('.portfolio-card');
+
+    if (filterButtons.length > 0 && portfolioCards.length > 0) {
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button
+                filterButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                portfolioCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+
+                    if (filter === 'all' || filter === category) {
+                        card.style.display = 'block';
+                        // Trigger a small animation reflow
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'scale(1)';
+                        }, 10);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'scale(0.9)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 400); // Wait for transition
+                    }
+                });
+            });
+        });
+    }
 });

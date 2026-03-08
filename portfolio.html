@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WW Digital - Fast, reliable, and experienced web design & development agency.">
+    <title>WW Digital | Modern Web Design & Development</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">WW <span>Digital</span></a>
+            <button class="mobile-toggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="nav-links">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About Us</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#why-us">Why Us</a>
+                <a href="portfolio.html" class="active">Portfolio</a>
+                <a href="quote.html" class="btn btn-nav">Get a Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Portfolio Hero -->
+    <section class="portfolio-hero section fade-in">
+        <div class="container">
+            <div class="badge fade-in-up">Our Portfolio</div>
+            <h1 class="fade-in-up delay-1">Proven Results for <span>Modern Brands</span></h1>
+            <p class="hero-sub fade-in-up delay-2">We don't just build websites; we build digital foundations for
+                business growth. Explore our latest work and the impact we've made.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section section">
+        <div class="container">
+            <!-- Filtering UI -->
+            <div class="portfolio-filters fade-in-up delay-3">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web-design">Web Design</button>
+                <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+                <button class="filter-btn" data-filter="custom-apps">Custom Apps</button>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="grid portfolio-grid fade-in-up delay-4">
+                <!-- Project 1 -->
+                <div class="portfolio-card" data-category="web-design">
+                    <div class="card-img-wrapper">
+                        <div class="card-placeholder" style="background: linear-gradient(135deg, #1e2a4a, #0d122b);">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="category">Web Design</span>
+                            <h3>Nexus Fintech Landing</h3>
+                            <a href="#" class="view-link">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-card" data-category="ecommerce">
+                    <div class="card-img-wrapper">
+                        <div class="card-placeholder" style="background: linear-gradient(135deg, #2c3e50, #000000);">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="category">E-Commerce</span>
+                            <h3>Luxe Retail Experience</h3>
+                            <a href="#" class="view-link">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-card" data-category="custom-apps">
+                    <div class="card-img-wrapper">
+                        <div class="card-placeholder" style="background: linear-gradient(135deg, #004e92, #000428);">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="category">Custom Apps</span>
+                            <h3>Velocity Dashboard</h3>
+                            <a href="#" class="view-link">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-card" data-category="web-design">
+                    <div class="card-img-wrapper">
+                        <div class="card-placeholder" style="background: linear-gradient(135deg, #434343, #000000);">
+                            <i class="fa-solid fa-compass-drafting"></i>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="category">Web Design</span>
+                            <h3>Stellar Creative Agency</h3>
+                            <a href="#" class="view-link">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-card" data-category="ecommerce">
+                    <div class="card-img-wrapper">
+                        <div class="card-placeholder" style="background: linear-gradient(135deg, #141e30, #243b55);">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="category">E-Commerce</span>
+                            <h3>Peak Performance Gear</h3>
+                            <a href="#" class="view-link">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-card" data-category="custom-apps">
+                    <div class="card-img-wrapper">
+                        <div class="card-placeholder"
+                            style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="category">Custom Apps</span>
+                            <h3>Core Logistics Portal</h3>
+                            <a href="#" class="view-link">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project CTA -->
+    <section class="cta-section section dark-bg">
+        <div class="container center">
+            <h2 class="fade-in-up">Ready to build your own success story?</h2>
+            <p class="fade-in-up delay-1">Let's discuss how WW Digital can upgrade your digital presence.</p>
+            <div class="fade-in-up delay-2">
+                <a href="quote.html" class="btn btn-primary">Start Your Project <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer dark-bg">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">WW <span>Digital</span></a>
+                <p>Your Web Presence, Upgraded.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#why-us">Why Us</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Get in Touch</h4>
+                <ul>
+                    <li><i class="fa-solid fa-envelope"></i> <a
+                            href="mailto:wwdigital917@gmail.com">wwdigital917@gmail.com</a></li>
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+13392212471">339-221-2471</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe for web insights and agency news.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 WW Digital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Team Member Modals -->
+    <div class="modal-overlay" id="team-modal">
+        <div class="modal-container">
+            <button class="modal-close" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="" alt="" class="modal-img" id="modal-img">
+                    <div class="modal-title">
+                        <h3 id="modal-name">Name</h3>
+                        <p class="role badge" id="modal-role">Role</p>
+                    </div>
+                </div>
+                <div class="modal-body" id="modal-bio">
+                    <!-- Bio goes here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
