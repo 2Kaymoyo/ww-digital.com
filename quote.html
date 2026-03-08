@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WW Digital - Fast, reliable, and experienced web design & development agency.">
+    <title>WW Digital | Modern Web Design & Development</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">WW <span>Digital</span></a>
+            <button class="mobile-toggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="nav-links">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About Us</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#why-us">Why Us</a>
+                <a href="index.html#portfolio">Portfolio</a>
+                <a href="quote.html" class="btn btn-nav active">Get a Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Quote Header -->
+    <section class="quote-header fade-in">
+        <div class="container center">
+            <div class="badge fade-in-up">Start Your Project</div>
+            <h1 class="fade-in-up delay-1">Let's Build Something <span>Great</span></h1>
+            <p class="hero-sub fade-in-up delay-2" style="margin: 0 auto;">Tell us about your next big idea, and we'll
+                help you bring it to life with precision and style.</p>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section class="quote-section section">
+        <div class="container quote-container">
+            <form class="quote-form glass-panel fade-in-up delay-3" onsubmit="event.preventDefault();">
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Jane Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="jane@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" placeholder="Acme Corp">
+                    </div>
+                    <div class="form-group">
+                        <label for="project-type">Project Type</label>
+                        <select id="project-type" required>
+                            <option value="" disabled selected>Select a type...</option>
+                            <option value="web-design">Custom Web Design</option>
+                            <option value="ecommerce">E-Commerce Development</option>
+                            <option value="ui-ux">UI/UX Revamp</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Estimated Budget</label>
+                        <div class="budget-options">
+                            <label class="budget-radio">
+                                <input type="radio" name="budget" value="<5k" required>
+                                <span>&lt; $5k</span>
+                            </label>
+                            <label class="budget-radio">
+                                <input type="radio" name="budget" value="5k-10k">
+                                <span>$5k - $10k</span>
+                            </label>
+                            <label class="budget-radio">
+                                <input type="radio" name="budget" value="10k-25k">
+                                <span>$10k - $25k</span>
+                            </label>
+                            <label class="budget-radio">
+                                <input type="radio" name="budget" value=">25k">
+                                <span>$25k+</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="details">Project Details & Goals</label>
+                        <textarea id="details" rows="5"
+                            placeholder="Tell us about your goals, timeline, and any specific requirements..."
+                            required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-footer">
+                    <button type="submit" class="btn btn-primary btn-large">Submit Request <i
+                            class="fa-solid fa-paper-plane"></i></button>
+                    <p class="form-note"><i class="fa-solid fa-lock"></i> Your information is secure and will never be
+                        shared.</p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer dark-bg">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">WW <span>Digital</span></a>
+                <p>Your Web Presence, Upgraded.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#why-us">Why Us</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Get in Touch</h4>
+                <ul>
+                    <li><i class="fa-solid fa-envelope"></i> <a
+                            href="mailto:hello@wwdigital.com">hello@wwdigital.com</a></li>
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe for web insights and agency news.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 WW Digital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Team Member Modals -->
+    <div class="modal-overlay" id="team-modal">
+        <div class="modal-container">
+            <button class="modal-close" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="" alt="" class="modal-img" id="modal-img">
+                    <div class="modal-title">
+                        <h3 id="modal-name">Name</h3>
+                        <p class="role badge" id="modal-role">Role</p>
+                    </div>
+                </div>
+                <div class="modal-body" id="modal-bio">
+                    <!-- Bio goes here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

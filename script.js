@@ -3,10 +3,10 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // 1. Sticky Navigation on Scroll
     const navbar = document.querySelector('.navbar');
-    
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
             bio: '<p>Wilbur is the founder of WW Digital, specializing in creating flawless, modern frontend experiences. With a keen eye for design aesthetics and a passion for performance, he ensures every project not only looks stunning but runs lightning-fast across all devices.</p>'
         },
         will: {
-            name: 'Will',
+            name: 'Will Hammond',
             role: 'Co-founder, Backend & Commerce Specialist',
             img: 'about-photo-2.png',
             bio: '<p>Will makes sure our digital solutions are as powerful under the hood as they are beautiful on the surface. Specializing in robust backend architectures and highly scalable e-commerce solutions, he builds the reliable systems that drive our clients\' businesses forward.</p>'
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const teamMembers = document.querySelectorAll('.team-member');
     const modal = document.getElementById('team-modal');
-    
+
     if (teamMembers.length > 0 && modal) {
         const modalClose = document.querySelector('.modal-close');
         const modalImg = document.getElementById('modal-img');
